@@ -1,6 +1,3 @@
-from django.contrib import admin
+from django.contrib import admin  # NOQA
 
-
-@admin.register({{ app_name|title }})
-class {{ app_name|title }}(admin.ModelAdmin):
-    pass
+from devlife.commons.admin import SoftDeletionCreatedUpdatedUsernameAdmin  # NOQA

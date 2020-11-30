@@ -1,7 +1,3 @@
-from django import models
+from django import models  # NOQA
 
-from model_controller.models import AbstractSoftDeletionCreatedUpdatedUsernameTimestamp
-
-
-class {{ app_name|title }}(AbstractSoftDeletionCreatedUpdatedUsernameTimestamp):
-    pass
+from model_controller.models import AbstractSoftDeletionCreatedUpdatedUsernameTimestamp  # NOQA
