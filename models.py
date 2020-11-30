@@ -1,4 +1,7 @@
 from django import models
 
-class {{ app_name }}(models.Model):
+from model_controller.models import AbstractSoftDeletionCreatedUpdatedUsernameTimestamp
+
+
+class {{ camel_case_app_name }}(AbstractSoftDeletionCreatedUpdatedUsernameTimestamp):
     pass
